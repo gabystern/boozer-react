@@ -1,5 +1,5 @@
 import React from 'react';
-import {Collapsible, CollapsibleItem, Collection, CollectionItem} from 'react-materialize'
+import {Collapsible, CollapsibleItem, Collection, CollectionItem, Card, Col, ProgressBar} from 'react-materialize'
 
 export default function CocktailDetails(props){
   if (!props.cocktail){
@@ -7,7 +7,8 @@ export default function CocktailDetails(props){
   }
   return(
     <div className="card">
-        <div className="card-content">
+        <div className="card-content" id="header">
+          <h4 id="header-text">He can whip you up a</h4>
           <h3>{props.cocktail.name}</h3>
         </div>
         <div className="card-content grey lighten-4">
@@ -24,6 +25,9 @@ export default function CocktailDetails(props){
             </Collection>
           </CollapsibleItem>
           </Collapsible>
+          <Col s={12}>
+            <ProgressBar />
+            </Col>
         </div>
       </div>
   )

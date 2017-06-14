@@ -1,0 +1,18 @@
+div #header {
+  background: url("../assets/images/ryans-place.jpg") center;
+  background-repeat: repeat-y;
+
+  zoom: 80%;
+  height: 200px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+h3 {
+  color: white;
+}
+
+#header-text{
+  font-size: 25px;
+  color: white;
+}

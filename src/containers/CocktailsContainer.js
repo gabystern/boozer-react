@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CocktailList from '../components/CocktailList'
 import CocktailDetails from '../components/CocktailDetails'
 import SearchBar from '../components/SearchBar'
+import "./style.css"
 import { Link, Switch, Route } from 'react-router-dom'
 
 export default class CocktailsContainer extends Component {
